@@ -1,0 +1,1 @@
+{"name":"Local: CountSay","url":"d:\\DSA\\String\\CountSay.cpp","tests":[{"id":1647456280943,"input":"2","output":"11"},{"id":1647456590849,"input":"3","output":"21"},{"id":1647456800521,"input":"5","output":"111221"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\String\\CountSay.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: ThreeElementSumK","url":"d:\\DSA\\Array\\ThreeElementSumK.cpp","tests":[{"id":1644774202021,"input":"6 13\n1 4 45 6 10 8","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Array\\ThreeElementSumK.cpp","group":"local","local":true}

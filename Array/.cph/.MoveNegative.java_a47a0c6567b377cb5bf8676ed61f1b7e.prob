@@ -1,0 +1,1 @@
+{"name":"Local: MoveNegative","url":"d:\\DSA\\Array\\MoveNegative.java","tests":[{"id":1643866889044,"input":"","output":"-5 -4 -1 -1 -3 5 5 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Array\\MoveNegative.java","group":"local","local":true}

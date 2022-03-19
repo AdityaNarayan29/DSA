@@ -1,0 +1,1 @@
+{"name":"Local: Kth","url":"d:\\DSA\\Array\\Kth.cpp","tests":[{"id":1643807526994,"input":"4\n1 5 3 7 \n3","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Array\\Kth.cpp","group":"local","local":true}

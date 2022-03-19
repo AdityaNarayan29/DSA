@@ -1,0 +1,1 @@
+{"name":"Local: Kth","url":"d:\\DSA\\Array\\Kth.java","tests":[{"id":1643822196828,"input":"4\n45 56 67 78\n2","output":"67"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Array\\Kth.java","group":"local","local":true}

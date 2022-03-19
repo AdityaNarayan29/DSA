@@ -1,0 +1,1 @@
+{"name":"Local: Rotate","url":"d:\\DSA\\String\\Rotate.cpp","tests":[{"id":1647455180077,"input":"abacd\ncdaba","output":"Yes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\String\\Rotate.cpp","group":"local","local":true}

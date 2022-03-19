@@ -1,0 +1,12 @@
+{
+        "terminal.integrated.cursorBlinking": true,
+        "debug.terminal.clearBeforeReusing": true,
+        "java.project.sourcePaths": [
+                "Sorting",
+                "Matrix",
+                "Important",
+                "Array",
+                "String"
+        ],
+        "C_Cpp.errorSquiggles": "Disabled"
+}

@@ -1,0 +1,1 @@
+{"name":"Local: Arraylist","url":"d:\\JAVA_DSA\\Important\\Arraylist.java","tests":[{"id":1640072318913,"input":"5\n1 2 3 4 5","output":"1 2 3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\JAVA_DSA\\Important\\Arraylist.java","group":"local","local":true}

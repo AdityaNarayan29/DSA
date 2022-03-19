@@ -1,0 +1,1 @@
+{"name":"Local: ValidShuffle","url":"d:\\DSA\\String\\ValidShuffle.cpp","tests":[{"id":1647457595184,"input":"asd\nfgh\nafsgdh","output":"Yes"},{"id":1647457896728,"input":"qwerty\n2345\nqw23er45ty","output":"Yes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\String\\ValidShuffle.cpp","group":"local","local":true}
