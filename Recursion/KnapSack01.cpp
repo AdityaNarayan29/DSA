@@ -5,11 +5,13 @@ using namespace std;
 
 int Knapsack(int value[], int wt[], int n, int W)
 {
-  if( n == 0 || W == 0){
+  if (n == 0 || W == 0)
+  {
     return 0;
   }
 
-  if(wt[n-1]>W){
+  if (wt[n - 1] > W)
+  {
     return Knapsack(value, wt, n - 1, W);
   }
 
@@ -18,9 +20,9 @@ int Knapsack(int value[], int wt[], int n, int W)
 
 int main()
 {
-  int wt[]={10,20,30};
-  int value[]={100,50,150};
+  int wt[] = {10, 20, 30};
+  int value[] = {100, 50, 150};
   int W = 50;
-  cout << Knapsack(value,wt,3,W);
+  cout << Knapsack(value, wt, 3, W);
   return 0;
 }

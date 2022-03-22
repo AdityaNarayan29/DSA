@@ -11,14 +11,16 @@ int countPath2D(int n, int i, int j)
   {
     return 1;
   }
-  if (i >= n || j >= n){
+  if (i >= n || j >= n)
+  {
     return 0;
   }
 
-  return countPath2D(n,i+1,j)+countPath2D(n,i,j+1);
+  return countPath2D(n, i + 1, j) + countPath2D(n, i, j + 1);
 }
 
-int main(){
-  cout << countPath2D(3,0,0)<< endl;
+int main()
+{
+  cout << countPath2D(3, 0, 0) << endl;
   return 0;
 }
