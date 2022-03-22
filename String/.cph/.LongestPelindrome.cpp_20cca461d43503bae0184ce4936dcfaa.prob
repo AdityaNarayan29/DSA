@@ -1,0 +1,1 @@
+{"name":"Local: LongestPelindrome","url":"d:\\DSA\\String\\LongestPelindrome.cpp","tests":[{"id":1647790014060,"input":"","output":""},{"id":1647790039370,"input":"addald","output":""},{"id":1647790412050,"input":"asdfdsajkl","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\String\\LongestPelindrome.cpp","group":"local","local":true}

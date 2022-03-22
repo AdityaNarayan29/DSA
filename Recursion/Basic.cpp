@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 // void func(int n){        // Print n no.s
@@ -7,10 +8,9 @@ using namespace std;
 //   cout << n << endl;
 // }
 
-viod func(int n,int a[]){
+int func(int n,int a[]){
   if(n < 0)return 0;
-  return sum(n-1, a) + a[n];
-  
+  return func(n-1, a) + a[n];
 }
 
 int main(){
@@ -19,5 +19,5 @@ int main(){
   int a[n];
   for (int i = 0; i < n; i++)cin >> a[i];
   
-  func(n, a);
+  cout << func(n, a);
 }
