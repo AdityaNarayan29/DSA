@@ -1,0 +1,1 @@
+{"name":"Local: Q1Codevita","url":"d:\\DSA\\Test\\Q1Codevita.cpp","tests":[{"id":1648234876284,"input":"H He L Be Au","output":"1"},{"id":1648241808758,"input":"H O","output":"1"},{"id":1648241819342,"input":"Au O","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Test\\Q1Codevita.cpp","group":"local","local":true}
