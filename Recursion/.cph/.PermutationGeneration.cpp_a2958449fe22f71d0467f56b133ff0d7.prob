@@ -1,0 +1,1 @@
+{"name":"Local: PermutationGeneration","url":"d:\\DSA\\Recursion\\PermutationGeneration.cpp","tests":[{"id":1648482029473,"input":"123","output":"123\n132\n213\n231\n312\n321"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\Recursion\\PermutationGeneration.cpp","group":"local","local":true}

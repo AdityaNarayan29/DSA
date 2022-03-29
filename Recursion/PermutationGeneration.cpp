@@ -19,8 +19,18 @@ void permutation(string s, string ans)
 
 int main()
 {
-  permutation("ABC", "");
+  string s;
+  cin >> s;
+  // permutation("ABC", "");
+  permutation(s, "");
 }
+
+// STL trick
+// sort(nums.begin(),nums.end());
+// do{
+//   ans.push_back(num);
+// }while (next_permutation(nums.begin(),nums.end()));
+
 
 // Output
 // ABC
