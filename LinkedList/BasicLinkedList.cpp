@@ -61,6 +61,37 @@ bool search(node *head, int key)
   }
   return false;
 }
+void deleteAtHead (node* &head){
+  
+  node* toDelete = head;
+  head = head->next;
+  
+  delete toDelete;
+}
+
+void deletion (node* &head, int val){
+
+  if (head==NULL)
+  {
+    return;
+  }
+  
+  if (head->next==NULL)
+  {
+    deleteAtHead(head);
+    return;
+  }
+
+  node* temp = head;
+  while (temp->next->data!=val)
+  {
+    temp = temp->next;
+  }
+  node* toDelete = temp->next;
+  temp->next = temp->next->next;
+  
+  delete toDelete;
+}
 
 int main()
 {
@@ -72,7 +103,11 @@ int main()
   display(head);
   InsterAtHead(head, 4);
   display(head);
-  cout << search(head, 5);
-  cout << search(head, 3);
+  cout << search(head, 5) << endl;
+  cout << search(head, 3) << endl;
+  deletion(head,3);
+  display(head);
+  deleteAtHead(head);
+  display(head);
   return 0;
 }
