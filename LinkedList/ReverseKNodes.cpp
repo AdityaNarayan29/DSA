@@ -1,3 +1,9 @@
+// Using recursion on iteration  // Refer Reverse.cpp
+// if K==2
+//    1->2->3->4->5->6->NULL
+// will become
+//    2->1->4->3->6->5->NULL
+
 #include <iostream>
 using namespace std;
 
@@ -93,33 +99,25 @@ void deletion (node* &head, int val){
   delete toDelete;
 }
 
-node* reverse(node* &head){
-  //Iterative Way
+node* reversek(node* head,int k){
   node* previousPtr = NULL;
   node* currentPtr = head;
   node* nextPtr;
 
-  while (currentPtr!=NULL)
+  int count = 0;
+  while (currentPtr!=NULL && count<k)
   {
-    nextPtr=currentPtr->next;
+    nextPtr = currentPtr -> next;
     currentPtr->next = previousPtr;
-
     previousPtr = currentPtr;
     currentPtr = nextPtr;
+    count++;
   }
-  return previousPtr;
-}
 
-node* reverseRecursive(node* &head){
-  //Recursive Way
-  if (head == NULL || head -> next == NULL)
-  {
-    return head;
-  }
-  node* newHead = reverseRecursive(head->next);
-  head->next->next = head;
-  head->next = NULL;
-  return newHead;
+if(nextPtr!=NULL){
+  head->next = reversek(nextPtr,k);
+}
+  return previousPtr;
 }
 
 int main()
@@ -129,22 +127,20 @@ int main()
   InsterAtTail(head, 1);
   InsterAtTail(head, 2);
   InsterAtTail(head, 3);
+  InsterAtTail(head, 4);
   InsterAtTail(head, 5);
   InsterAtTail(head, 6);
-  InsterAtTail(head, 7);
   display(head);
-  InsterAtHead(head, 4);
-  display(head);
-  cout << search(head, 5) << endl;
-  cout << search(head, 3) << endl;
-  deletion(head,3);
-  display(head);
-  deleteAtHead(head);
-  display(head);
-
-  // node* newHead = reverse(head);
-  node* newHead = reverseRecursive(head);
+  // InsterAtHead(head, 4);
+  // display(head);
+  // cout << search(head, 5) << endl;
+  // cout << search(head, 3) << endl;
+  // deletion(head,3);
+  // display(head);
+  // deleteAtHead(head);
+  // display(head);
+  int k = 2;
+  node* newHead = reversek(head,k);
   display(newHead);
-
   return 0;
 }
