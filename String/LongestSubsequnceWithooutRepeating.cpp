@@ -1,4 +1,4 @@
-// 3 leetcode
+// 3. leetcode
 class Solution
 {
 public:
