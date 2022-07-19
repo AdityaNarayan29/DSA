@@ -3,7 +3,7 @@
 #include <math.h>
 using namespace std;
 
-int prefixEvaluation(string s)
+int postfixEvaluation(string s)
 {
   stack<int> st;
   for (int i = 0;i <=s.length() - 1; i++)
@@ -49,6 +49,6 @@ int main()
 {
   string str;
   cin >> str;
-  cout << prefixEvaluation(str);
+  cout << postfixEvaluation(str);
   return 0;
 }
