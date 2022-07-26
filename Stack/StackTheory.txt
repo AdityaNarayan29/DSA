@@ -1,0 +1,51 @@
+STACK
+
+Parent Question - 7
+------------------------------------------------------------------------
+Nearest greatest to left
+Nearest greatest to right
+Nearest smaller to left
+Nearest smaller to right
+
+Stock span problem
+Maximum area of histogram
+
+Max area of Rectangle in binary matrix
+
+Rain water trapping
+Implementing a min STACK
+Implementing stack using heap
+The celebrity problem
+Longest valid Parenthesis
+Iterative tower of height
+-------------------------------------------------------------------------
+Condition 1:
+Array---------->Stack
+      |-------->heap
+
+Condition 2:
+if double loop
+for(i = 0 ; --------------> something)
+  for(j = i ; --------------> something)
+--------------------------------------------------------------------------
+
+Q.) Next largest to right
+-> 1  3  2  4
+   3  4  4 -1
+
+ <<-------------pushing to stack
+ 1   3   2   4
+
+  stack iteration
+  top -> Null
+  top -> 4
+  top -> 2  4
+  top -> 3  4, poped(2) since 2<3 which was the next node
+  top -> 3  4
+
+  conditions: 
+    stack empty => -1
+    s.top() > arr[i] => s.top()
+    s.top() <= arr[i] => s.pop()
+------------------------------------------------------------------------------
+

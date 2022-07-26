@@ -26,6 +26,7 @@ int main()
   for (int i = 0; i < n; i++)
     cin >> nums[i];
 
+  // The function
   vector<int> empty;
   generate(empty, 0, nums);
 
