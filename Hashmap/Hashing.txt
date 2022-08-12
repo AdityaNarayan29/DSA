@@ -18,4 +18,5 @@ Collision Resolving
     . No clustering
     . Requires more computation time
 
+
 Rabin Karp Algorithm
