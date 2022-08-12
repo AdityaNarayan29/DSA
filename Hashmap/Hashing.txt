@@ -1,0 +1,21 @@
+Hashing
+Hash Function
+Collision Resolving
+  Seperate Chaining
+  Open Addressing uses probing
+
+    Linear probing
+    . Easy implement
+    . Best Cache Performance
+    . Suffers from clustering
+
+    Quadratic probing
+    . Average cache Performance
+    . Suffers a lesser clustering
+
+    Double Hashing
+    . Poor cache Performance
+    . No clustering
+    . Requires more computation time
+
+Rabin Karp Algorithm

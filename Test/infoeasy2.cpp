@@ -1,48 +1,26 @@
-#include<iostream>
-#include<string>
-#include<vector>
-#include<algorithm>
-#include<unistd.h>
-
-using namespace std; 
-
-int max_cities(vector<string> cities, vector<int> distances){
-  for (int i = 0; i < cities.size(); i++)
+#include <bits/stdc++.h>
+#define int long long
+using namespace std;
+int n, a[200001], m;
+void solveCook()
+{
+  cin >> n;
+  m = 0;
+  for (int i = n - 1; i >= 0; --i)
   {
-    cout << cities[0][0];
+    cin >> a[i];
+    if (a[i] % 2 == 1)
+      m ^= i;
   }
-  
-  return -1;
+  if (m == 0)
+    puts("Cook");
+  else
+    puts("Chef");
 }
-int main(){
-  vector<string> cities = {"Tucson","Albany","Smith","Westford","Berkeley"};
-  vector<int> distances = {102,95,114,1421,50};
-  cout << max_cities(cities,distances);
-}
-
-int calc(array, n1, n2){
-  int sum = 0;
-  for(int i = n1;i<= n2;i++){
-    sum += array[i];
-  }
-  return sum;
-}
-
-int comput_day_gains(int nbSeats,vector<int> payingGuests, vector<int>guestMovements){
-  int count = 0;
-  for (int i = 0; i < guestMovements.size(); i++)
-  {
-    int v = guestMovements[i];
-    if(payingGuests[v]!= 0){
-      if(nbSeats > 0){
-        count += payingGuests[v];
-        payingGuests[v] = 0;
-        nbSeats--;
-      }
-    }
-    else{
-      nbSeats++;
-    }
-  }
-  return count;
+signed main()
+{
+  int t;
+  cin >> t;
+  while (t--)
+    solveCook();
 }
