@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+  <div class="container">
+    <div id="list">
+    </div>
+    <button onclick="addNode();">
+      +
+    </button><span> Add a value</span>
+  </div>
+</body>
+
+<script>
+  let btnpa = document.getElementById('remove');
+
+  let vari = 0;
+  function addNode(){
+    document.getElementById("list").innerHTML += `<div ><h3>This is the text ${vari}</h3><button id="var${vari}" onclick="deleteNode(var${vari});">Delete</button></div>`;
+    vari++;
+    if(vari === 1000){
+      vari = 0;
+    }
+  }
+  
+  function deleteNode(id){
+    let del=id.parentElement;
+    del.remove();
+    let u = 0 ;
+  }
+  </script>
+</html>

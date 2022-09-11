@@ -1,0 +1,1 @@
+{"name":"Local: InfixToPrefix","url":"d:\\DSA\\BitAndMaths\\InfixToPrefix.cpp","tests":[{"id":1660403501876,"input":"(a-b/c)*(a/k-l)","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA\\BitAndMaths\\InfixToPrefix.cpp","group":"local","local":true}

@@ -7,8 +7,8 @@
       pop to stack and print until '(' is found
   if operator
       pop from stack and until an operator with less precedence is found
-  
-  (a-b/c)*(a/k-l)
+
+  (a-b/c)*(a/k-l) gives abc/-ak/l-*
 */
 
 #include <iostream>
@@ -37,7 +37,7 @@ string infixtoPostfix(string s){
 
   for (int i = 0; i < s.length() ; i++)
   {
-    if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'a' && s[i] <= 'z')){
+    if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')){
       res+=s[i];
     }else if(s[i]=='('){
       st.push(s[i]);
