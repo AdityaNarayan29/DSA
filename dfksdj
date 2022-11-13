@@ -1,0 +1,129 @@
+[1mdiff --git a/Test/bWala.cpp b/Test/bWala.cpp[m
+[1mdeleted file mode 100644[m
+[1mindex 534b46e..0000000[m
+[1m--- a/Test/bWala.cpp[m
+[1m+++ /dev/null[m
+[36m@@ -1,38 +0,0 @@[m
+[31m-// infosys practice question[m
+[31m-#include <bits/stdc++.h>[m
+[31m-#include <iostream>[m
+[31m-using namespace std;[m
+[31m-int main()[m
+[31m-{[m
+[31m-  // dd/mm/yyyy[m
+[31m-  string date;[m
+[31m-  cin >> date;[m
+[31m-[m
+[31m-  int len = date.size();[m
+[31m-  string word = "";[m
+[31m-  if(len == 10){[m
+[31m-    for(auto x : date){[m
+[31m-      if(x == '/'){[m
+[31m-        cout << word <<endl;[m
+[31m-        word == "";[m
+[31m-      }[m
+[31m-      else{[m
+[31m-        word = word + x;[m
+[31m-      }[m
+[31m-    }[m
+[31m-    cout << word << endl;[m
+[31m-  }[m
+[31m-[m
+[31m-  string day = "";[m
+[31m-  for (size_t i = 0; i < 2; i++)[m
+[31m-  {[m
+[31m-  [m
+[31m-  }[m
+[31m-  [m
+[31m-[m
+[31m-  if(day.size()==2){[m
+[31m-[m
+[31m-  }[m
+[31m-  cout << len;[m
+[31m-  [m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Test/hurrrr.cpp b/Test/hurrrr.cpp[m
+[1mdeleted file mode 100644[m
+[1mindex c10a95b..0000000[m
+[1m--- a/Test/hurrrr.cpp[m
+[1m+++ /dev/null[m
+[36m@@ -1,77 +0,0 @@[m
+[31m-// infosys practice question[m
+[31m-#include <bits/stdc++.h>[m
+[31m-#include <iostream>[m
+[31m-using namespace std;[m
+[31m-int main()[m
+[31m-{[m
+[31m-  int [m
+[31m-[m
+[31m-  // int E, N;[m
+[31m-  // vector<int> a;[m
+[31m-  // int temp = 0, c = 0;[m
+[31m-  // cin >> E;[m
+[31m-  // temp = E;[m
+[31m-  // cin >> N;[m
+[31m-[m
+[31m-  // for (int i = 0; i < N; i++)[m
+[31m-  // {[m
+[31m-  //   int t = 0;[m
+[31m-  //   cin >> t;[m
+[31m-  //   a.push_back(t);[m
+[31m-  // }[m
+[31m-[m
+[31m-  // sort(a.begin(), a.end());[m
+[31m-[m
+[31m-  // for (int i = N - 1; i >= 0; i--)[m
+[31m-  // {[m
+[31m-  //   if (temp > 0)[m
+[31m-  //   {[m
+[31m-  //     temp -= a[i];[m
+[31m-  //     c++;[m
+[31m-  //   }[m
+[31m-  //   if (temp > 0)[m
+[31m-  //   {[m
+[31m-  //     temp -= a[i];[m
+[31m-  //     c++;[m
+[31m-  //   }[m
+[31m-  // }[m
+[31m-[m
+[31m-  // if (temp > 0)[m
+[31m-  //   cout << -1;[m
+[31m-  // else[m
+[31m-  //   cout << c;[m
+[31m-  return 0;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-int MinInt(int *arr, int n, int x, int y){[m
+[31m-  int count = 1000;[m
+[31m-  int max = 0;[m
+[31m-[m
+[31m-  int ex = 0;[m
+[31m-  int ey = 0;[m
+[31m-[m
+[31m-for(int i = 0; i<n ;i++){[m
+[31m-  if(arr[i]==x)ex = 1;[m
+[31m-  if(arr[i]==y)ey = 1;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-  if(ex != 1 && ey != 1)return -1;[m
+[31m-// till here ,neeche aur likhte haain[m
+[31m-  for(int i = 0; i<n; i++){[m
+[31m-    if(arr[i]==x){[m
+[31m-      if(count<max)max = count;[m
+[31m-      count = 0;[m
+[31m-    }[m
+[31m-    else if(arr[i]==y){[m
+[31m-      if(count < max)max = count;[m
+[31m-      count = 0;[m
+[31m-    }else[m
+[31m-      count++;[m
+[31m-  }[m
+[31m-  return max;[m
+[31m-[m
+[31m-[m
+[31m-  if(x == 7)return 3;[m
+[31m-}[m
+\ No newline at end of file[m
